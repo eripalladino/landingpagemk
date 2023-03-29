@@ -9,3 +9,49 @@ header {
 .redes{
     text-align: right;
 }
+#contacto{
+    width: 500px;
+    background-color: rgb(42, 29, 180);
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 30px;
+
+}
+#contacto h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+.controles{
+    width: 100%;
+    background-color: rgb(183, 183, 221);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    color: rgb(26, 25, 25);
+    border: 2px;
+    font-size: 18px;
+}
+#areadetexto{ width: 100%;
+    background-color: rgb(183, 183, 221);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    color: rgb(26, 25, 25);
+    border: 2px;
+    font-size: 18px;
+}
+
+}
+.boton {
+    text-align: center;
+    width: 20%;
+    font-size: larger;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    
+
+}
