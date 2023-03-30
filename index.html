@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,56 @@
     <title>Trabajo integrador</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Sobre nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#Profolio">Porfolio</a>
-                <a href="#contacto">Contacto</a>
-              
-            </div>
-            <div class="redes">
-                <a href="https://github.com/" target="_blank"><img src="img/git hub.png" alt="icono"width="20px" height="20px"></a>
-                <a href="https://ar.linkedin.com/" target="_blank"> <img src="img/linkedin sin fondo.png" alt="icono"width="20px" height="20px"> </a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="img/you tube sin fondo.webp" alt="icono"width="20px" height="20px"></a>
+    <!--SECCION DE INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/SOMOS/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <a href="#inicio" class="seleccionado">Inicio</a>
+                            <a href="#nosotros">Sobre nosotros</a>
+                            <a href="#servicios">Servicios</a>
+                            <a href="#Portfolio">Portfolio</a>
+                            <a href="#contacto">Contacto</a>
+                        </ul>
+                    </nav>
 
-            </div>
-            
+                    <!--Iconos del Menu Responsive-->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
 
-        </nav>
-    
-    </header>
+                    <!-- Iconos de las redes Sociales -->
+                    <div class="redes">
+                        <a href="https://github.com/" target="_blank"><img src="img/git hub.png" alt="icono"
+                                width="20px" height="20px"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://ar.linkedin.com/" target="_blank"> <img src="img/linkedin sin fondo.png"
+                                alt="icono" width="20px" height="20px"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="img/you tube sin fondo.webp"
+                                alt="icono" width="20px" height="20px"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
     <main>
         <section id="inicio"></section>
-  
+
         <h3>Bienvenidos</h3>
         <h1>Somos(buscar nombre) desarrolladores</h1>
-        <p>Somos un grupo de jóvenes apasionados por la tecnología y la programación, y estamos emocionados de compartir con ustedes lo que podemos ofrecer.
-            Nos enfocamos en crear soluciones tecnológicas que ayuden a nuestros clientes a optimizar sus procesos y aumentar su eficiencia. Trabajamos de manera colaborativa con nuestros clientes para entender sus necesidades y ofrecer soluciones a medida.
+        <p>Somos un grupo de jóvenes apasionados por la tecnología y la programación, y estamos emocionados de compartir
+            con ustedes lo que podemos ofrecer.
+            Nos enfocamos en crear soluciones tecnológicas que ayuden a nuestros clientes a optimizar sus procesos y
+            aumentar su eficiencia. Trabajamos de manera colaborativa con nuestros clientes para entender sus
+            necesidades y ofrecer soluciones a medida.
         </p>
 
         <section id="nosotros">
-            <p>imagenes  con una breve descripcion nuestra</p>
+            <p>imagenes con una breve descripcion nuestra</p>
         </section>
         <br>
         <br>
@@ -86,22 +104,24 @@
         <br>
         <br>
 
-         <section id="contacto">
-            
+        <section id="contacto">
+
             <h3>Para contactarte con nostros</h3>
             <input class="controles" type="text" name="Nombre" id="nombre" placeholder="Nombre">
             <input class="controles" type="text" name="apellido" id="apellido" placeholder="Apellido">
             <input class="controles" type="email" name="e-mail" id="e-mail" placeholder="e-mail">
             <input class="controles" type="text" name="asunto" id="asunto" placeholder="Asunto">
             <input class="controles" type="text" name="mensaje" id="mensaje" placeholder="Escriba su mensaje aqui">
-            <textarea name="Mesaje" id="areadetexto" cols="70" rows="10" placeholder="Escriba su mensaje aqui"></textarea>
+            <textarea name="Mesaje" id="areadetexto" cols="70" rows="10"
+                placeholder="Escriba su mensaje aqui"></textarea>
 
             <input class="boton" type="submit" value="Enviar">
         </section>
-    
-  
+
+
 
     </main>
-    
+
 </body>
+
 </html>
