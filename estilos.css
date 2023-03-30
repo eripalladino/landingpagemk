@@ -11,6 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* SECCION DE INICIO */
+
 #inicio {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./img/fondo-inicio.jpg");
     background-size: cover;
@@ -129,6 +131,68 @@ html {
 #icono-nav{
     color: #fff;
     display: none;
+}
+/* SECCION SOBRE NOSOTROS */
+
+#nosotros{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#nosotros .contenedor-foto{
+    max-width: 500px;
+    margin-right: 80px;
+    display: flex;
+    align-content: center;
+}
+
+#nosotros .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;;
+    background-color: #f3f3f3;    
+}
+
+#nosotros .nosostros {
+    margin: 0 40px;
+}
+
+#nosotros .nosotros .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color:  #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#nosotros .nosotros h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#nosotros .nosotros h2 span{
+    color: #33FF4C;
+}
+
+#nosotros .nosotros h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#nosotros .nosotros p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
 }
 
 #contacto{
