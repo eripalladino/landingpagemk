@@ -261,22 +261,29 @@ html {
     color: #000;
     margin-bottom: 25px;
 }
+/* SECCION CONTACTO */
 
 
 #contacto{
+    
     width: 500px;
-    background-color: rgb(42, 29, 180);
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./img/fondo-inicio.jpg");
+
     padding: 20px;
     margin: auto;
     margin-top: 10px;
     border-radius: 30px;
 
 }
+
 #contacto h3{
     font-size: 30px;
     margin-bottom: 40px;
     margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
     color: aliceblue;
+    text-align:center;
 }
 .controles{
     width: 100%;
@@ -306,6 +313,7 @@ html {
     padding: 10px;
     border: none;
     border-radius: 4px;
+    
     
 
 }
