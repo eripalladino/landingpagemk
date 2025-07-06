@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micaela Kanagusku</title>
+
+    <!-- Font Awesome (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- SECCIÓN DE INICIO -->
+      <section id="inicio-contacto">
+        <div class="contenido">
+          <header>
+            <div class="contenido-header">
+              <h1>Micaela <span>Kanagusku</span></h1>
+
+              <!-- Ícono del menú responsive -->
+              <i class="fas fa-bars" id="icono-nav"></i>
+
+              <!-- Menú de navegación -->
+              <nav id="nav">
+                <ul>
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="#sobremi">Sobre mi</a></li>
+                  <li><a href="#proyectos">Proyectos</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+                </ul>
+              </nav>
+
+              <!-- Iconos de redes sociales -->
+              <div class="redes">
+                <a><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <main>
+        <section id="contacto" class="seccion-contacto">
+          <h2>Contactame</h2>
+          <p>
+            ¿Querés decirme algo? Completá el formulario y me pondré en contacto
+            con vos pronto.
+          </p>
+
+          <form
+            action="https://formspree.io/f/tu-formulario"
+            method="POST"
+            class="formulario-contacto"
+          >
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="social_icon">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+
+        <ul class="menu">
+          <li><a href="#inicio" class="seleccionado">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <p>&copy; 2025 | Todos los derechos reservados</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

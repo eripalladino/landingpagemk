@@ -328,6 +328,215 @@ footer .wave#wave4 {
   }
 }
 
+/* === SECCIÓN DE INICIO BLOG === */
+
+.blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#inicio-blog {
+  background: linear-gradient(180deg, #fff0f5, #ffe4e9);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+#inicio-blog .contenido header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+#inicio-blog .contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#inicio-blog .contenido header .contenido-header h1 {
+  text-align: center;
+  color: hsl(290, 88%, 46%);
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+/*
+.post {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.post.visible {
+  
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.post h2 {
+  margin-top: 15px;
+  font-size: 22px;
+}
+.post p {
+  line-height: 1.6;
+}
+*/
+.post {
+  display: flex;
+  gap: 20px; /* espacio entre imagen y texto */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.post.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.post img {
+  max-width: 40%; /* o el ancho que quieras darle */
+  border-radius: 10px;
+  object-fit: cover; /* para que la imagen no se distorsione */
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column; /* Título arriba, texto abajo */
+  justify-content: center;
+}
+
+.post > div {
+  max-width: 60%; /* para que el texto no se pase */
+}
+
+.post h2 {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+}
+
+.post p {
+  line-height: 1.6;
+}
+
+#inicio-contacto {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/mkbat.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  color: #fff;
+}
+
+#inicio-contacto .contenido header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+#inicio-contacto .contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#inicio-contacto .contenido header .contenido-header h1 {
+  text-align: center;
+  color: hsl(290, 88%, 46%);
+}
+
+/*CONTACTO*/
+
+.seccion-contacto {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.seccion-contacto h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.seccion-contacto p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.formulario-contacto label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  padding: 12px;
+  background-color: #a42fc1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #8e26a6;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   #icono-nav {
@@ -363,5 +572,45 @@ footer .wave#wave4 {
 
   .redes {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .post img {
+    max-width: 100%;
+  }
+
+  .post-content {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion-contacto h2 {
+    font-size: 1.5rem;
+  }
+
+  .seccion-contacto p {
+    font-size: 0.95rem;
+  }
+
+  .formulario-contacto label {
+    font-size: 0.95rem;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 0.95rem;
+  }
+
+  .formulario-contacto button {
+    font-size: 1rem;
+    padding: 10px;
   }
 }
