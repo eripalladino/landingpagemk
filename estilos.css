@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* === SECCION DE INICIO === */
+/* === SECCIÓN DE INICIO === */
 
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -19,14 +19,15 @@ html {
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  color: #fff;
 }
 
 #inicio .contenido header {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
-  z-index: 100;
   top: 0;
+  z-index: 100;
 }
 
 #inicio .contenido header .contenido-header {
@@ -37,6 +38,7 @@ html {
   align-items: center;
   padding: 10px 20px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 #inicio .contenido header .contenido-header h1 {
@@ -44,7 +46,16 @@ html {
   color: hsl(290, 88%, 46%);
 }
 
-#inicio .contenido header .contenido-header nav ul {
+/* Ícono menú responsive */
+#icono-nav {
+  display: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Menú de navegación */
+#nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +63,7 @@ html {
   padding-left: 0;
 }
 
-#inicio .contenido header .contenido-header nav ul li a {
+#nav ul li a {
   text-decoration: none;
   color: #fff;
   margin: 0 12px;
@@ -60,23 +71,29 @@ html {
   transition: 0.5s;
 }
 
-#inicio .contenido header .contenido-header nav ul a:hover {
+#nav ul li a:hover {
   color: hsl(290, 88%, 46%);
 }
 
-#inicio .contenido header .contenido-header .redes a {
+/* Redes sociales */
+.redes {
+  display: flex;
+  align-items: center;
+}
+
+.redes a {
   text-decoration: none;
   color: #fff;
-  display: inline-block;
   margin-left: 10px;
   transition: 0.5s;
 }
 
-#inicio .contenido header .contenido-header .redes a:hover {
+.redes a:hover {
   color: hsl(290, 88%, 46%);
 }
 
-#inicio .contenido .presentacion {
+/* Presentación */
+.presentacion {
   max-width: 1100px;
   height: 100vh;
   margin: auto;
@@ -89,30 +106,29 @@ html {
   text-align: center;
 }
 
-#inicio .contenido .presentacion .bienvenida {
+.presentacion .bienvenida {
   font-size: 16px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-#inicio .contenido .presentacion h2 {
+.presentacion h2 {
   font-size: 45px;
   margin-bottom: 25px;
-  text-align: center;
 }
-#inicio .contenido .presentacion h2 span {
-  font-size: 45px;
+
+.presentacion h2 span {
   color: hsl(290, 88%, 46%);
 }
 
-#inicio .contenido .presentacion .descripcion {
+.presentacion .descripcion {
   max-width: 700px;
   margin: 25px auto;
   font-size: 16px;
 }
 
-#inicio .contenido .presentacion a {
+.presentacion a {
   text-decoration: none;
   display: inline-block;
   margin: 25px;
@@ -125,46 +141,94 @@ html {
   transition: 0.5s;
 }
 
-#inicio .contenido .presentacion a:hover {
+.presentacion a:hover {
   background-color: hsl(290, 88%, 46%);
   border: 2px solid #000;
   color: #000;
 }
 
-/* Por defecto ocultamos el ícono de menú */
-#icono-nav {
-  color: #fff;
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
+/* === SOBRE MÍ === */
 
-/* Mostrar menú como horizontal en desktop */
-#nav ul {
+#sobremi {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  color: #111135;
 }
 
-/* Para móviles y tablets */
+.contenedor-foto {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-foto img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f3f3f3;
+}
+
+.sobremi {
+  flex: 1 1 300px;
+  padding: 0 20px;
+}
+
+.sobremi .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+.sobremi h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.sobremi h2 span {
+  color: hsl(290, 88%, 46%);
+}
+
+.sobremi h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sobremi p {
+  font-size: 14px;
+  color: #565656;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  /* Mostramos el ícono */
   #icono-nav {
     display: block;
   }
-
-   /* Ocultamos el menú horizontal */
   #nav ul {
     display: none;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
     top: 60px;
-    right: 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    z-index: 200;
+    right: 0; /* Pegado al lado derecho */
+    padding: 15px 20px;
+    border-radius: 10px 0 0 10px;
+    width: 200px;
+    align-items: center; /* centra los links dentro del menú */
+    z-index: 99;
   }
 
-  /* Mostramos el menú cuando tiene la clase "visible" */
   #nav.visible ul {
     display: flex;
   }
@@ -176,92 +240,10 @@ html {
   #nav ul li a {
     color: white;
     font-weight: bold;
-  }
-}
-
-/* === SECCION SOBRE NOSOTROS === */
-
-#sobremi {
-  max-width: 1100px;
-  margin: auto;
-  padding: 100px 15px;
-  color: #111135;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-}
-
-#sobremi .contenedor-foto {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#sobremi .contenedor-foto img {
-  width: 100%;
-  border-radius: 20px;
-  background-color: #f3f3f3;
-  padding: 10px;
-  object-fit: cover;
-}
-
-#sobremi .sobremi {
-  flex: 1 1 300px;
-  padding: 0 20px;
-}
-
-#sobremi .sobremi .titulo-seccion {
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
-}
-
-#sobremi .sobremi h2 {
-  font-size: 34px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-#sobremi .sobremi h2 span {
-  color: hsl(290, 88%, 46%);
-}
-
-#sobremi .sobremi h3 {
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-#sobremi .sobremi p {
-  font-size: 14px;
-  line-height: 25px;
-  color: #565656;
-  margin-bottom: 12px;
-}
-
-
-/* === MEDIA QUERIES === */
-
-@media (max-width: 768px) {
-  #inicio .contenido header .contenido-header {
-    flex-direction: column;
-    align-items: flex-start;
+    text-decoration: none;
   }
 
-  #inicio .contenido .presentacion h2,
-  #inicio .contenido .presentacion h2 span {
-    font-size: 32px;
+  .redes {
+    display: none;
   }
-
-  #nosotros {
-    flex-direction: column;
-  }
-
-  #servicios .fila {
-    flex-di
-  }
+}
